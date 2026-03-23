@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Course Hub | Study Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #04070d;
+            color: #f1f5f9;
+        }
+
+        .glass-card {
+            background: linear-gradient(145deg, #0f172a, #020617);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            border-color: #6366f1;
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px -15px rgba(99, 102, 241, 0.2);
+        }
+
+        .emoji-box {
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #04070d;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen">
+
+    <nav class="sticky top-0 z-50 bg-[#04070d]/80 backdrop-blur-md border-b border-white/5 py-4 px-6 mb-8">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <h2 class="text-2xl font-bold tracking-tight flex items-center gap-2">
+                <span class="text-indigo-500 text-3xl">🎓</span> Courses Hub
+            </h2>
+            <div class="relative w-full md:w-96">
+                <input type="text" id="searchInput" placeholder="Search courses..."
+                    class="w-full bg-[#0f172a] border border-white/10 rounded-full py-2 px-10 focus:outline-none focus:border-indigo-500 transition-all text-sm">
+                <i class="fas fa-search absolute left-4 top-3 text-slate-500 text-xs"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 pb-20">
+
+        <div class="mb-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
+                Unlock Your <span class="text-indigo-500">Brilliant Potential</span> 🚀
+            </h1>
+            <p class="text-slate-400 max-w-2xl text-lg italic">"The core of engineering is about using science to find
+                creative solutions or strategies."</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="glass-card p-8 rounded-3xl flex flex-col h-full course-card">
+                <div
+                    class="emoji-box w-16 h-16 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-inner">
+                    💻
+                </div>
+                <h3 class="text-xl font-bold mb-3">ACS Engineering 2025</h3>
+                <p class="text-slate-400 text-sm mb-6 flex-grow">
+                    Engineering Course for HSC 2025
+                </p>
+                <div class="space-y-4">
+                    <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                        <div class="bg-indigo-500 h-full w-2/3"></div>
+                    </div>
+                    <a href="https://youtube.com/playlist?list=PLG6ahsXGfu4XdJbbXYxOATnnWHI_U_MI-&si=Dxat8MwSvMqHKzPR"
+                        target="_blank"
+                        class="w-full bg-white text-black py-3 rounded-2xl font-bold flex items-center justify-center gap-2 hover:bg-indigo-500 hover:text-white transition-all">
+                        Watch Playlist <i class="fas fa-play text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl flex flex-col h-full course-card">
+                <div
+                    class="emoji-box w-16 h-16 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-inner">
+                    💻
+                </div>
+                <h3 class="text-xl font-bold mb-3">ACS Engineering 2024</h3>
+                <p class="text-slate-400 text-sm mb-6 flex-grow">
+                    Engineering Course for HSC 2024
+                </p>
+                <div class="space-y-4">
+                    <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                        <div class="bg-indigo-500 h-full w-2/3"></div>
+                    </div>
+                    <a href="https://youtube.com/playlist?list=PLG6ahsXGfu4XTXtYZ28br9R27nVRegUFR&si=MyEiQ-PCBs3ntFD5"
+                        target="_blank"
+                        class="w-full bg-white text-black py-3 rounded-2xl font-bold flex items-center justify-center gap-2 hover:bg-indigo-500 hover:text-white transition-all">
+                        Watch Playlist <i class="fas fa-play text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl flex flex-col h-full course-card">
+                <div
+                    class="emoji-box w-16 h-16 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-inner">
+                    💻
+                </div>
+                <h3 class="text-xl font-bold mb-3">ACS Engineering 2023</h3>
+                <p class="text-slate-400 text-sm mb-6 flex-grow">
+                    Engineering Course for HSC 2023
+                </p>
+                <div class="space-y-4">
+                    <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                        <div class="bg-indigo-500 h-full w-2/3"></div>
+                    </div>
+                    <a href="https://youtube.com/playlist?list=PLG6ahsXGfu4V8LeOmfii1HGRjj9YvHHFo&si=5RYwOrzhCMNNQGIs"
+                        target="_blank"
+                        class="w-full bg-white text-black py-3 rounded-2xl font-bold flex items-center justify-center gap-2 hover:bg-indigo-500 hover:text-white transition-all">
+                        Watch Playlist <i class="fas fa-play text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl flex flex-col h-full course-card">
+                <div
+                    class="emoji-box w-16 h-16 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-inner">
+                    ⚡
+                </div>
+                <h3 class="text-xl font-bold mb-3">ACS GST 2025</h3>
+                <p class="text-slate-400 text-sm mb-6 flex-grow">
+                    GST Course for HSC 2025
+                </p>
+                <div class="space-y-4">
+                    <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                        <div class="bg-indigo-500 h-full w-1/4"></div>
+                    </div>
+                    <a href="https://youtube.com/playlist?list=PLWPZ6Bahrm33eXw_324Arh4QltSGB-W6Q&si=QkQSWUkR74lCfKei"
+                        target="_blank"
+                        class="w-full bg-white text-black py-3 rounded-2xl font-bold flex items-center justify-center gap-2 hover:bg-indigo-500 hover:text-white transition-all">
+                        Watch Playlist <i class="fas fa-play text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl flex flex-col h-full course-card">
+                <div
+                    class="emoji-box w-16 h-16 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-inner">
+                    📐
+                </div>
+                <h3 class="text-xl font-bold mb-3">ACS Varsity 2025</h3>
+                <p class="text-slate-400 text-sm mb-6 flex-grow">
+                    Varsity Course for HSC 2025
+                </p>
+                <div class="space-y-4">
+                    <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                        <div class="bg-indigo-500 h-full w-4/5"></div>
+                    </div>
+                    <a href="https://youtube.com/playlist?list=PLWPZ6Bahrm31uFSqPJhGTie_h41RxXs68&si=SWHuI4peCxqXz1MP"
+                        target="_blank"
+                        class="w-full bg-white text-black py-3 rounded-2xl font-bold flex items-center justify-center gap-2 hover:bg-indigo-500 hover:text-white transition-all">
+                        Watch Playlist <i class="fas fa-play text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl flex flex-col h-full course-card">
+                <div
+                    class="emoji-box w-16 h-16 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-inner">
+                    🤖
+                </div>
+                <h3 class="text-xl font-bold mb-3">ACS FRB 2025</h3>
+                <p class="text-slate-400 text-sm mb-6 flex-grow">
+                    Final Revision Batch for HSC 2025
+                </p>
+                <div class="space-y-4">
+                    <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                        <div class="bg-indigo-500 h-full w-0"></div>
+                    </div>
+                    <a href="https://youtube.com/playlist?list=PLWPZ6Bahrm319_-rgojLhYzKZZgWaqaxC&si=bnmABohoamSXMi8Q"
+                        target="_blank"
+                        class="w-full bg-white text-black py-3 rounded-2xl font-bold flex items-center justify-center gap-2 hover:bg-indigo-500 hover:text-white transition-all">
+                        Watch Playlist <i class="fas fa-play text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl flex flex-col h-full course-card">
+                <div
+                    class="emoji-box w-16 h-16 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-inner">
+                    🔨
+                </div>
+                <h3 class="text-xl font-bold mb-3">ACS Pre Medical 2025</h3>
+                <p class="text-slate-400 text-sm mb-6 flex-grow">
+                    Pre Medical batch for HSC 2025
+                </p>
+                <div class="space-y-4">
+                    <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                        <div class="bg-indigo-500 h-full w-1/2"></div>
+                    </div>
+                    <a href="https://youtube.com/playlist?list=PLWPZ6Bahrm30ynShnTqmVVdC7fEQ-f36v&si=1JoTS1aHZGpdjDh_"
+                        target="_blank"
+                        class="w-full bg-white text-black py-3 rounded-2xl font-bold flex items-center justify-center gap-2 hover:bg-indigo-500 hover:text-white transition-all">
+                        Watch Playlist <i class="fas fa-play text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl flex flex-col h-full course-card">
+                <div
+                    class="emoji-box w-16 h-16 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-inner">
+                    🧪
+                </div>
+                <h3 class="text-xl font-bold mb-3">ACS Engineering Documents 2025</h3>
+                <p class="text-slate-400 text-sm mb-6 flex-grow">
+                    All engineering documents are presented here
+                </p>
+                <div class="space-y-4">
+                    <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                        <div class="bg-indigo-500 h-full w-10"></div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1HGaJkmjb3Eu_nensTbDmVj-ySQdRYjql" target="_blank"
+                        class="w-full bg-white text-black py-3 rounded-2xl font-bold flex items-center justify-center gap-2 hover:bg-indigo-500 hover:text-white transition-all">
+                        View Content <i class="fas fa-play text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl flex flex-col h-full course-card">
+                <div
+                    class="emoji-box w-16 h-16 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-inner">
+                    🧪
+                </div>
+                <h3 class="text-xl font-bold mb-3">ACS Engineering Documents 2024</h3>
+                <p class="text-slate-400 text-sm mb-6 flex-grow">
+                    All engineering documents are presented here
+                </p>
+                <div class="space-y-4">
+                    <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                        <div class="bg-indigo-500 h-full w-10"></div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1u6djMFKZNMZTRfMRJDh6ze7FU3Ic3pwO" target="_blank"
+                        class="w-full bg-white text-black py-3 rounded-2xl font-bold flex items-center justify-center gap-2 hover:bg-indigo-500 hover:text-white transition-all">
+                        View Content <i class="fas fa-play text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl flex flex-col h-full course-card">
+                <div
+                    class="emoji-box w-16 h-16 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-inner">
+                    🧪
+                </div>
+                <h3 class="text-xl font-bold mb-3">ACS Engineering Documents 2023</h3>
+                <p class="text-slate-400 text-sm mb-6 flex-grow">
+                    All engineering documents are presented here
+                </p>
+                <div class="space-y-4">
+                    <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                        <div class="bg-indigo-500 h-full w-10"></div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1J3LqWIyXnarELtsNaVt25yj2OwET21qA" target="_blank"
+                        class="w-full bg-white text-black py-3 rounded-2xl font-bold flex items-center justify-center gap-2 hover:bg-indigo-500 hover:text-white transition-all">
+                        View Content <i class="fas fa-play text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl flex flex-col h-full course-card">
+                <div
+                    class="emoji-box w-16 h-16 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-inner">
+                    🧪
+                </div>
+                <h3 class="text-xl font-bold mb-3">ACS Pre Medical Documents 2025</h3>
+                <p class="text-slate-400 text-sm mb-6 flex-grow">
+                    All pre medical documents are presented here
+                </p>
+                <div class="space-y-4">
+                    <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                        <div class="bg-indigo-500 h-full w-10"></div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1cC9rQQKk0qa5XqA0qNT6R32aTvm2N33k" target="_blank"
+                        class="w-full bg-white text-black py-3 rounded-2xl font-bold flex items-center justify-center gap-2 hover:bg-indigo-500 hover:text-white transition-all">
+                        View Content <i class="fas fa-play text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl flex flex-col h-full course-card">
+                <div
+                    class="emoji-box w-16 h-16 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-inner">
+                    🧪
+                </div>
+                <h3 class="text-xl font-bold mb-3">ACS FRB Documents 2025</h3>
+                <p class="text-slate-400 text-sm mb-6 flex-grow">
+                    All documents are presented here
+                </p>
+                <div class="space-y-4">
+                    <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                        <div class="bg-indigo-500 h-full w-10"></div>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1FhEb8tPAyq2jAiez7Jbyy-4bRnKBRzhj" target="_blank"
+                        class="w-full bg-white text-black py-3 rounded-2xl font-bold flex items-center justify-center gap-2 hover:bg-indigo-500 hover:text-white transition-all">
+                        View Content <i class="fas fa-play text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="py-10 text-center border-t border-white/5 bg-[#020617]">
+        <p class="text-slate-500">Designed by <span class="text-sm text-indigo-500">Rahul Acharya Rajon</span> • All
+            Rights Reserved &copy; 2026
+        </p>
+    </footer>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const courseCards = document.querySelectorAll('.course-card');
+
+        searchInput.addEventListener('input', (e) => {
+            const filter = e.target.value.toLowerCase();
+
+            courseCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+
+                if (title.includes(filter) || description.includes(filter)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
